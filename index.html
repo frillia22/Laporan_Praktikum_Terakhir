@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghidupkan dan Mematikan Lampu</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            padding-top: 30px;
+        }
+
+        img {
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Klik Pada Bagian Gambar Untuk Menghidupkan/Mematikan Lampu</h2>
+
+    <!-- Gambar lampu -->
+    <img id="lampu" src="Lampu bisa hidup dan mati.gif" alt="Lamp">
+
+    <script>
+        const lampu = document.getElementById("lampu");
+        let nyala = false;
+
+        lampu.onclick = function() {
+            if (nyala) {
+                lampu.src = "Lampu bisa hidup dan mati.gif";
+                nyala = false;
+            } else {
+                lampu.src = "Lampu bisa hidup dan mati.gif";
+                nyala = true;
+            }
+        }
+    </script>
+
+</body>
+</html>
